@@ -40,6 +40,11 @@ body {
 
 .wrapper-input {
   display: flex;
+  margin-top: 20px;
+}
+
+#add-new-task {
+  display: block;
 }
 
 .list {
@@ -83,7 +88,7 @@ label[for='new-task'] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -100,8 +105,10 @@ input[type="text"] {
   color: #333;
 }
 
+
+
 /* New Task */
-label[for='new-task'] {
+.first-task {
   display: block;
   margin: 0 0 20px;
 }
@@ -125,18 +132,18 @@ input#new-task {
   vertical-align: middle;
 }
 
-.list-item > input[type="checkbox"] {
+.list-item>input[type="checkbox"] {
   margin: 0 10px;
 }
 
-.list-item > label {
+.list-item>label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item > .input[type="text"] {
+.list-item>.input[type="text"] {
   width: 226px
 }
 
@@ -161,11 +168,11 @@ ul li input[type=text] {
   display: none
 }
 
-ul li.editMode input[type=text] {
+li.item_edit input[type=text] {
   display: inline-block;
   width: 224px
 }
 
-ul li.editMode label {
+li.item_edit label {
   display: none;
 }
